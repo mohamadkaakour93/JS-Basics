@@ -83,45 +83,64 @@ const BMI = (weight, height) => {
     return parseFloat(result) ;
 
 }
-
 const createLanguagesArray = () => {
-    
-
+    return ["Html","CSS","Java","PHP"];
 }
-
 const createNumbersArray = () => {
-    
+    const arr= [];
+    for(let i=0 ; i<6 ; i++){
+        arr.push(i);
+    }
+    return arr;
 }
 
 const replaceElement = (languages) => {
-    
+    languages[2] = 'Javascript';
+    return languages;
+
 }
 
 const addElement = (languages) => {
-    
+    languages.push('Ruby');
+    languages.push('Python');
+    return languages;
+
 }
 
 const addNumberElement = (numbers) => {
-    
+    numbers.unshift(-1);
+    numbers.unshift(-2);
+    return numbers;
+
 }
 
 const removeFirst = (languages) => {
+    languages.shift();
+    return languages;
 
 }
 
 const removeLast = (languages) => {
+    languages.pop();
+    return languages;
 }
 
 const convertStrToArr = (social_arr) => {
+    const social_array = social_arr.split(",");
+    return social_array;
 
 }
 
 const convertArrToStr = (languages) => {
+    const arrToS = languages.join(",");
+    return arrToS;
 
 }
 
 const sortArr = (social_arr) => {
+    return social_arr.sort();
 }
 
 const invertArr = (social_arr) => {
+    return social_arr.reverse();
 }
